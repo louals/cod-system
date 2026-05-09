@@ -5,7 +5,7 @@ CREATE TABLE products (
     description TEXT,
     price NUMERIC(10, 2) NOT NULL,
     stock INTEGER NOT NULL DEFAULT 0,
-    image_url TEXT,
+    images TEXT[] DEFAULT '{}',
     category TEXT,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
